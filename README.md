@@ -3,7 +3,6 @@ prog1-project
 
 Objective
 ---------
-Create a Android application for conversions of values from imperial
-to metric system.
+Create an Android application that can solve sudoku's.
 
 Project work for class prog1
