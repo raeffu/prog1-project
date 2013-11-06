@@ -1,0 +1,11 @@
+eclipse-workspace/*
+!eclipse-workspace/SudokuSolver
+eclipse-workspace/SudokuSolver/*
+
+!eclipse-workspace/SudokuSolver/src
+!eclipse-workspace/SudokuSolver/res
+
+eclipse-workspace/SudokuSolver/res/*
+!eclipse-workspace/SudokuSolver/res/layout
+!eclipse-workspace/SudokuSolver/res/menu
+!eclipse-workspace/SudokuSolver/res/values
