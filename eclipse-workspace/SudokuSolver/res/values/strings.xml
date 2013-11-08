@@ -4,10 +4,10 @@
     <string name="app_name">SudokuSolver</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="edit_message">Enter Sudoku digits</string>
-    <string name="button_send">Send</string>
-    <string name="title_activity_display_message">My Message</string>
+    <string name="edit_message">-,-,6,7,-,2,3,1,-,8,-,-,-,9,-,-,2,7,7,-,5,-,-,8,-,9,-,7,-,5,-,-,8,-,9,-,-,-,9,3,6,-,8,-,2,4,7,-,-,1,-,-,-,3,2,6,-,-,-,9,-,-,1,-,9,7,-,-,-,1,-,-,-,8,-,9,-,1,-,4,3,5,3,1,-,-,-,6,2,7,9</string>
+    <string name="button_send">Solve</string>
+    <string name="title_activity_display_message">Solution</string>
     <string name="README">Please enter the Sudoku you like to solve row by row. 
-        All values should be separeted by comma. [Row 1 Field 1], [Row 1 Field 2], and so on</string>
+        All values should be separeted by comma. [Row 1 Field 1], [Row 1 Field 2], and so on. Empty filed should be entered with "-" (minus)</string>
 
 </resources>

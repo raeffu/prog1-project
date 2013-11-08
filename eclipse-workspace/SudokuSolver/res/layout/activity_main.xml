@@ -22,7 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_weight="0"
         android:ems="10"
-        android:hint="@string/edit_message" />
+        android:digits="0123456789,-"
+        android:inputType="number" />
 
 
     <Button
