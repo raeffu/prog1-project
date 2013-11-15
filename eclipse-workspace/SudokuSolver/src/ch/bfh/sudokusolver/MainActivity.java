@@ -15,7 +15,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		
+
 		// Set default text, empty sudoku
 		EditText editText = (EditText) findViewById(R.id.edit_message);
 		editText.setText(R.string.edit_message);
@@ -36,31 +36,35 @@ public class MainActivity extends Activity {
 		// Field with Sudoku string
 		EditText editText = (EditText) findViewById(R.id.edit_message);
 		String message = editText.getText().toString();
+		
+		String[] stringValues = message.split(",");
+    int[] sudokuValues = new int[stringValues.length];
 
+    for (int i = 0; i < stringValues.length; i++) {
+      sudokuValues[i] = Integer.parseInt(stringValues[i]);
+    }
+		
 		// Validation of input
-		if (validate(editText, message)) {
-			intent.putExtra(EXTRA_MESSAGE, message);
+		if (validate(editText, sudokuValues)) {
+			intent.putExtra(EXTRA_MESSAGE, sudokuValues);
 			startActivity(intent);
 		}
 	}
 
-	private boolean validate(EditText editText, String sudoku) {
+	private boolean validate(EditText editText, int[] sudokuValues) {
 		boolean valid = true;
 
-		String[] sudokuValues = sudoku.split(",");
-		// editText.setError(String.valueOf(sudokuValues.length));
-
 		if (sudokuValues.length != 81) {
-			editText.setError("Please enter 81 values (or empy fields)");
+			editText.setError("Only entered "
+					+ String.valueOf(sudokuValues.length) + " values");
 			valid = false;
 		}
 
-		for (String sudokuValue : sudokuValues) {
-			if (!sudokuValue.equals("-")) {
+		for (int sudokuValue : sudokuValues) {
+			if (sudokuValue != 0) {
 
-				int number = Integer.parseInt(sudokuValue);
-				if (number > 9) {
-					editText.setError("Numbers 0-9 allowed");
+				if (sudokuValue > 9) {
+					editText.setError("Numbers 1-9 allowed");
 					valid = false;
 					break;
 				}
@@ -69,5 +73,4 @@ public class MainActivity extends Activity {
 
 		return valid;
 	}
-
 }

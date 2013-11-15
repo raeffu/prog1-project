@@ -1,5 +1,7 @@
 package ch.bfh.sudokusolver;
 
+import java.util.Arrays;
+
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
@@ -20,16 +22,26 @@ public class DisplayMessageActivity extends Activity {
 		
 		// Get the message from the intent
 	    Intent intent = getIntent();
-	    String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+//	    String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+	    int[] sudokuValues = intent.getIntArrayExtra(MainActivity.EXTRA_MESSAGE);
+	    
+	    SudokuSolver solver = new SudokuSolver(sudokuValues);
+	    boolean result = solver.solve();
+	    String resultString = solver.getString();
+	    
+//	    int[] sudokuSolved = solveSudoku(sudokuValues);
 
+	    
+	    
 	    // Create the text view
 	    TextView textView = new TextView(this);
 	    textView.setTextSize(40);
-	    textView.setText(message);
+	    textView.setText(Arrays.toString(sudokuValues));
 
 	    // Set the text view as the activity layout
 	    setContentView(textView);
 	}
+
 
 	/**
 	 * Set up the {@link android.app.ActionBar}, if the API is available.
