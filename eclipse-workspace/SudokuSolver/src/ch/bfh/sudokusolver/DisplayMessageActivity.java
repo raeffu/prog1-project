@@ -36,7 +36,7 @@ public class DisplayMessageActivity extends Activity {
 	    // Create the text view
 	    TextView textView = new TextView(this);
 	    textView.setTextSize(40);
-	    textView.setText(Arrays.toString(sudokuValues));
+	    textView.setText(resultString);
 
 	    // Set the text view as the activity layout
 	    setContentView(textView);

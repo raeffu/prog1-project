@@ -52,7 +52,7 @@ public class SudokuSolver {
     for (int i = 0; i < ROWS; i++) {
       for (int j = 0; j < COLS; j++) {
         
-        if(_sudoku[i][j] == 0){
+        if(_sudoku[i][j] == UNASSIGNED){
           _row = i;
           _col = j;
           return true;
@@ -98,11 +98,20 @@ public class SudokuSolver {
       }
     }
     
-    return false;
+    return true;
   }
   
   public String getString(){
-    return "";    
+    String result = "";
+    
+    for (int i = 0; i < ROWS; i++) {
+      for (int j = 0; j < COLS; j++) {
+        if(i==0 && j==0) {result += _sudoku[i][j]; }
+        result += "," + _sudoku[i][j];
+      }
+    }
+    
+    return result;    
   }
   
 }
