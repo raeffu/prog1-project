@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
@@ -17,8 +18,17 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 
 		// Set default text, empty sudoku
-		EditText editText = (EditText) findViewById(R.id.edit_message);
-		editText.setText(R.string.edit_message);
+		EditText editText = (EditText) findViewById(R.id.sudoku_string);
+		editText.setText(R.string.sudoku_string);
+		
+	// Create the text view
+//    TextView textView = new TextView(this);
+//    textView.setTextSize(40);
+//    textView.setText(R.string.sudoku_string);
+
+    // Set the text view as the activity layout
+//    addContentView(textView, null);
+//    setContentView(textView);
 	}
 
 	@Override
@@ -34,7 +44,7 @@ public class MainActivity extends Activity {
 		Intent intent = new Intent(this, DisplayMessageActivity.class);
 
 		// Field with Sudoku string
-		EditText editText = (EditText) findViewById(R.id.edit_message);
+		EditText editText = (EditText) findViewById(R.id.sudoku_string);
 		String message = editText.getText().toString();
 		
 		String[] stringValues = message.split(",");
