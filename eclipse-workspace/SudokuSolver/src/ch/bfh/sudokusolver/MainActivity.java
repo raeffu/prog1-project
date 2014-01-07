@@ -18,8 +18,8 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 
 		// Set default text, empty sudoku
-		EditText editText = (EditText) findViewById(R.id.sudoku_string);
-		editText.setText(R.string.sudoku_string);
+		EditText editText = (EditText) findViewById(R.id.message);
+		editText.setText(R.string.sudoku_string_easy);
 		
 	// Create the text view
 //    TextView textView = new TextView(this);
@@ -44,8 +44,9 @@ public class MainActivity extends Activity {
 		Intent intent = new Intent(this, DisplayMessageActivity.class);
 
 		// Field with Sudoku string
-		EditText editText = (EditText) findViewById(R.id.sudoku_string);
+		EditText editText = (EditText) findViewById(R.id.message);
 		String message = editText.getText().toString();
+		message = message.replaceAll("\\n", "");
 		
 		String[] stringValues = message.split(",");
     int[] sudokuValues = new int[stringValues.length];

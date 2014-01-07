@@ -1,5 +1,7 @@
 package ch.bfh.sudokusolver;
 
+import android.widget.TextView;
+
 public class SudokuSolver {
   
   private static final int UNASSIGNED = 0;
