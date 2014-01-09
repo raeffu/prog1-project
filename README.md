@@ -6,7 +6,11 @@ Create an Android application that can solve sudoku's.
 
 ### Anleitung
 
-1. SudokuSolver.apk auf einem Android Smartphone öffnen.
+1. SudokuSolver.apk auf einem Android Smartphone installieren und öffnen.
+   z.B. per Download von Github
+   (http://github.com/raeffu/prog1-project/blob/master/SudokuSolver.apk?raw=true)
+   oder per Dateiübertragung. Nach Download auf Smartphone das *.apk
+   File öffnen und installieren.
 2. Sudoku App starten.
 3. Ein Sudoku wird angezeigt und kann mit klick auf "Solve" gelöst werden.
 
