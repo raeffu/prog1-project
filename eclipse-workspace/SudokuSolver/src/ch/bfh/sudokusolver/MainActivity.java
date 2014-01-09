@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
@@ -32,7 +31,7 @@ public class MainActivity extends Activity {
 	/** Called when the user clicks the Send button */
 	public void sendMessage(View view) {
 		// Intent to lunch activity with Sudou Solution
-		Intent intent = new Intent(this, DisplayMessageActivity.class);
+		Intent intent = new Intent(this, DisplayResultActivity.class);
 
 		// Field with Sudoku string
 		EditText editText = (EditText) findViewById(R.id.message);
@@ -57,8 +56,8 @@ public class MainActivity extends Activity {
 		boolean valid = true;
 
 		if (sudokuValues.length != 81) {
-			editText.setError("Only entered "
-					+ String.valueOf(sudokuValues.length) + " values");
+			editText.setError("You entered "
+					+ String.valueOf(sudokuValues.length) + " values instead of 81");
 			valid = false;
 		}
 
