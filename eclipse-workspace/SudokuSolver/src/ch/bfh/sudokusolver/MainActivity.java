@@ -20,15 +20,6 @@ public class MainActivity extends Activity {
 		// Set default text, empty sudoku
 		EditText editText = (EditText) findViewById(R.id.message);
 		editText.setText(R.string.sudoku_string_easy);
-		
-	// Create the text view
-//    TextView textView = new TextView(this);
-//    textView.setTextSize(40);
-//    textView.setText(R.string.sudoku_string);
-
-    // Set the text view as the activity layout
-//    addContentView(textView, null);
-//    setContentView(textView);
 	}
 
 	@Override
@@ -81,7 +72,6 @@ public class MainActivity extends Activity {
 				}
 			}
 		}
-
 		return valid;
 	}
 }

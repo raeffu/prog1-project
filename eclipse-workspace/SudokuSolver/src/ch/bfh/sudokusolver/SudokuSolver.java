@@ -1,7 +1,5 @@
 package ch.bfh.sudokusolver;
 
-import android.widget.TextView;
-
 public class SudokuSolver {
   
   private static final int UNASSIGNED = 0;
@@ -43,16 +41,15 @@ public class SudokuSolver {
     
     // for all possibilities try
     for (int num = 1; num <= 9; num++) {
-      if (isValidChoice(row, col, num)) {             // if num looks good
+      if (isValidChoice(row, col, num)) { // if num looks good
         _sudoku[row][col] = num;          // try assign num
         
-        if (solve()) return true;           // try solving with this assert (reccursive)
-        
+        if (solve()){
+          return true;                    // try solving with this assert (reccursive)
+        }
         _sudoku[row][col] = UNASSIGNED;   // undo and try with other value
       }
-      
     }
-    
     return false; // returns false if not solvable
   }
   
@@ -62,8 +59,6 @@ public class SudokuSolver {
       for (int j = 0; j < COLS; j++) {
         
         if(_sudoku[i][j] == UNASSIGNED){
-//          _row = i;
-//          _col = j;
           return true;
         }
       }
@@ -132,7 +127,6 @@ public class SudokuSolver {
       }
       result += System.getProperty("line.separator");
     }
-    
     return result;    
   }
   
