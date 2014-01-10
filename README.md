@@ -24,6 +24,8 @@ Es koennen auch andere Sudokus eingegeben werden (als Zeichenkette, siehe Beispi
 
 ### Inhalt ZIP-Datei
 
+Die Praesentation befindet sich im Ordner doc/.
+
 In diesem Projekt befinden sich nur die relevanten Dateien des Sourcecodes (insbesondere *SudokuSolver.java*).
 Sprich alle Dateien die ich auch editiert habe, die restlichen Dateien sind generierte Dateien und hier nicht enthalten.
 
