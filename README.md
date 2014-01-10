@@ -24,8 +24,13 @@ In diesem Projekt befinden sich nur die relevanten Dateien des Sourcecodes (insb
 Sprich alle Dateien die ich auch editiert habe, die restlichen Dateien sind generierte Dateien und hier nicht enthalten.
 
 <table>
-    <tr><td>Datei</td><td>Beschreibung</td></tr>
-    <tr><td>fdsa</td><td>adsf</td></tr>
+    <th><td>Datei</td><th>Beschreibung</td></tr>
+    <tr><td>SudokuSolver.java</td><td>Klasse die das Sudoku loest.</td></tr>
+    <tr><td>MainActivity.java</td><td>Wir ausgefuehrt sobald die App startet und zeigt Startbild an.</td></tr>
+    <tr><td>DisplayResultActivity.java</td><td>Zeigt das Resultat mit dem geloesten Sudoku an.</td></tr>
+    <tr><td>strings.xml</td><td>XML-Datei mit verwendeten Texten und Sudoku Aufgaben.</td></tr>
+    <tr><td>activity_main.xml</td><td>Layout des Startbildschirmes.</td></tr>
+    <tr><td>activity_display_result.xml</td><td>Layout fuer das Anzeigen des Resultats.</td></tr>
 </table>
 
 Datei                             Beschreibung
