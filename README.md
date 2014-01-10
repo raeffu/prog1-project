@@ -24,7 +24,7 @@ In diesem Projekt befinden sich nur die relevanten Dateien des Sourcecodes (insb
 Sprich alle Dateien die ich auch editiert habe, die restlichen Dateien sind generierte Dateien und hier nicht enthalten.
 
 <table>
-    <th><td>Datei</td><th>Beschreibung</td></tr>
+    <th><td>Datei</td><td>Beschreibung</td></th>
     <tr><td>SudokuSolver.java</td><td>Klasse die das Sudoku loest.</td></tr>
     <tr><td>MainActivity.java</td><td>Wir ausgefuehrt sobald die App startet und zeigt Startbild an.</td></tr>
     <tr><td>DisplayResultActivity.java</td><td>Zeigt das Resultat mit dem geloesten Sudoku an.</td></tr>
