@@ -1,24 +1,32 @@
 ## prog1-project
 
-### Objective
+Der Sourcecode ist auch auf GitHub verfügbar: http://github.com/raeffu/prog1-project
 
-Create an Android application that can solve sudoku's.
+### Ziel
+
+Erstellen einer Android Applikation, die Sudokus lösen kann.
 
 ### Anleitung
 
 1. SudokuSolver.apk auf einem Android Smartphone installieren und oeffnen.
    z.B. per Download von Github
    (http://github.com/raeffu/prog1-project/blob/master/SudokuSolver.apk?raw=true)
+   oder ueber Dropbox
+   (...Prog1&2/Projects/Projekte/SudokuSolver_Laubscher)
    oder per Dateiuebertragung. Nach Download auf Smartphone das *.apk
    File oeffnen und installieren.
 2. Sudoku App starten.
-3. Ein Sudoku wird angezeigt und kann mit klick auf "Solve" geloest werden.
+3. Ein Beispiel-Sudoku wird angezeigt und kann mit Klick auf "Solve" geloest werden.
 
 Es koennen auch andere Sudokus eingegeben werden (als Zeichenkette, siehe Beispielsudoku).
 
 In diesem Projekt befinden sich nur die relevanten Dateien des Sourcecodes (insbesondere *SudokuSolver.java*).
-Sprich alle Dateien die ich auch editiert habe, die restlichen Dateien sind generierte Dateien,
-die die Android IDE erstellt hat.
+Sprich alle Dateien die ich auch editiert habe, die restlichen Dateien sind generierte Dateien und hier nicht enthalten.
+
+<table>
+    <tr><td>Datei</td><td>Beschreibung</td></tr>
+    <tr><td>fdsa</td><td>adsf</td></tr>
+</table>
 
 Datei                             Beschreibung
 
