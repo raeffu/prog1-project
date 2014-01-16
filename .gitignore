@@ -1,3 +1,5 @@
+key
+
 eclipse-workspace/*
 !eclipse-workspace/SudokuSolver
 eclipse-workspace/SudokuSolver/*
